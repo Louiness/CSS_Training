@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  position: relative;
+}
+.card {
+  position: relative;
+  margin: 0 18px;
+  width: 200px;
+  height: 200px;
+}
+.card:hover .explanation {
+  visibility: visible;
+  opacity: 1;
+}
+.explanation {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.explanation .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.explanation .content h3 {
+  text-transform: uppercase;
+}
+.explanation .content p {
+  padding: 0 16px;
+  margin: 12px 0 16px 0;
+}
+.explanation .content a {
+  padding: 8px 10px;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 0 12px 0;
+}
+.explanation .content a:hover {
+  color: #000000;
+  background: #ffffff;
+}
